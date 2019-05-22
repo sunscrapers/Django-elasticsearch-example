@@ -2,7 +2,7 @@
 
 Simple project to test Elasticsearch with Django, build on docker.
 
-###### WARNING! This project is not prepared for deploying.
+###### WARNING! This project is only for local testing, it's not prepared for deployment into remote server.
 
 ## Prerequisites
 
@@ -48,7 +48,3 @@ Check out article to this project, link.
 
 - max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
   https://github.com/elastic/elasticsearch/issues/21523
-
-## Authors
-
-* **Patryk Młynarek**
