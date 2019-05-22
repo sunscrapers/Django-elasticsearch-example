@@ -1,0 +1,20 @@
+[
+{
+    "model": "cars.manufacturer",
+    "pk": 1,
+    "fields": {
+        "name": "Opel",
+        "country_code": "de",
+        "created": "1862-01-21"
+    }
+},
+{
+    "model": "cars.manufacturer",
+    "pk": 2,
+    "fields": {
+        "name": "Honda",
+        "country_code": "jp",
+        "created": "1948-09-24"
+    }
+}
+]

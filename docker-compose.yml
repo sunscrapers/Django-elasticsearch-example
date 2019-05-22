@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  elasticsearch:
+    image: blacktop/elasticsearch:6.7.1
+  db:
+    image: postgres:11.3-alpine
+  django:
+    image: django_app:latest
+    build:
+      context: .
+      dockerfile: compose/django/Dockerfile
+    command: >
+      /bin/bash -c "
+        while ! curl -X GET elasticsearch:9200/_cluster/health --silent;
+        do
+          sleep 1;
+        done;
+        python manage.py runserver 0.0.0.0:8000
+      "
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - elasticsearch

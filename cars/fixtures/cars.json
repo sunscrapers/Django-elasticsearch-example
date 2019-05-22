@@ -1,0 +1,112 @@
+[
+{
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+        "name": "Corolla",
+        "color": "black",
+        "description": "Why do we use it?\r\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "type": 1,
+        "manufacturer": 2
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+        "name": "Toledo",
+        "color": "blue",
+        "description": "Where does it come from?\r\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\r\n\r\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+        "type": 1,
+        "manufacturer": 1
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+        "name": "Corsa",
+        "color": "green",
+        "description": "What is Lorem Ipsum?\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "type": 3,
+        "manufacturer": 2
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+        "name": "Megan",
+        "color": "black",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non aliquam nulla, vitae luctus ligula. Aenean interdum iaculis nisi, volutpat consectetur purus lacinia id. Phasellus accumsan fringilla magna quis facilisis. Aenean dignissim tempus nibh, id porta tortor rhoncus at. Nunc auctor quam et consequat congue. Donec mollis sapien nibh, nec iaculis augue vestibulum vel. Nullam viverra mauris vel posuere tincidunt. Duis vulputate lacus mi, sit amet efficitur lorem posuere quis.",
+        "type": 2,
+        "manufacturer": 2
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 6,
+    "fields": {
+        "name": "Ducato",
+        "color": "white",
+        "description": "Nam non metus ac odio tincidunt finibus ut sit amet nisl. Ut in mauris sagittis, mattis nunc a, euismod felis. Aenean viverra nisl vitae dolor dictum vulputate. Maecenas tortor justo, faucibus at convallis id, suscipit ultrices magna. Donec aliquam sapien quis augue convallis, in maximus urna rhoncus. Nullam dapibus, tortor at fermentum faucibus, nibh purus fermentum nulla, sed aliquam leo est id tortor. Nulla semper enim eget lorem consequat, non tristique sem sodales. Integer aliquet felis sit amet magna sollicitudin malesuada. Mauris lacinia diam turpis, a iaculis tortor ultricies sed. Suspendisse cursus erat leo, eu porttitor elit dictum in. Morbi ac dolor sed nisl lacinia imperdiet. Sed ante augue, lobortis vel tristique sed, efficitur ut dolor. Aliquam elementum, urna pellentesque viverra cursus, dui augue consequat quam, sed euismod leo sem ac sem. In mattis arcu tellus, id tincidunt quam dignissim ut. Praesent vitae libero et ante efficitur interdum eu vel eros. Quisque urna arcu, tincidunt ut elit sit amet, malesuada elementum urna.",
+        "type": 2,
+        "manufacturer": 1
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 7,
+    "fields": {
+        "name": "A3",
+        "color": "silver",
+        "description": "Quisque nec augue semper, cursus lacus vitae, aliquam urna. Etiam pretium consectetur odio, et lacinia eros interdum sagittis. Donec cursus lorem sed commodo scelerisque. Nullam eu diam ut justo vestibulum luctus id in nulla. Nulla scelerisque ornare dictum. Curabitur ullamcorper dolor in risus imperdiet, non tincidunt nibh euismod. Quisque mauris nulla, sodales auctor erat a, dapibus iaculis lacus. Nulla ligula metus, rutrum ut urna et, imperdiet accumsan sapien. Integer ut malesuada mauris, eget ornare ipsum. Praesent non iaculis nibh, venenatis porta mauris. Morbi eu nisi ipsum. Donec efficitur nunc odio, et imperdiet augue tincidunt sit amet.",
+        "type": 1,
+        "manufacturer": 1
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 8,
+    "fields": {
+        "name": "A6",
+        "color": "black",
+        "description": "Ut pellentesque sit amet lacus vitae iaculis. In tincidunt vitae elit non mollis. Morbi varius congue nisl nec pulvinar. Pellentesque vel viverra libero, et fermentum mauris. Pellentesque molestie purus ut enim consequat, sit amet vehicula sem mattis. In hac habitasse platea dictumst. Integer enim mi, rhoncus tempor mauris id, porta interdum urna. Phasellus malesuada id turpis vitae cursus. Sed pellentesque est non elit bibendum, eget auctor metus aliquam. Donec elementum ante sed magna mattis, ut eleifend est tristique. Duis vitae tellus vel lacus luctus ornare. Donec vestibulum a augue eget blandit.",
+        "type": 3,
+        "manufacturer": 1
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 9,
+    "fields": {
+        "name": "Octavia",
+        "color": "white",
+        "description": "Aliquam tempor, ex vel pellentesque maximus, nunc risus lacinia est, eget tincidunt nisl nibh eget justo. Nunc porta arcu arcu, at accumsan turpis pharetra et. Suspendisse vel diam et quam dictum consectetur eleifend a lorem. Praesent tempor consequat dapibus. Sed sit amet sem ultrices, pharetra nunc sit amet, accumsan augue. Donec eget ante urna. Mauris neque est, varius sed dui id, rutrum faucibus purus. Mauris vel tellus eget leo tincidunt bibendum ut vel ipsum. Duis sem sem, feugiat eget pulvinar eget, blandit id mi. Nam vel velit id mauris finibus sagittis.",
+        "type": 1,
+        "manufacturer": 1
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 10,
+    "fields": {
+        "name": "Kona",
+        "color": "blue",
+        "description": "Integer placerat neque aliquet nisi suscipit tempor. Sed maximus, augue non lobortis cursus, quam purus vestibulum neque, lobortis aliquet est dolor sed ligula. Nullam molestie ex neque, sit amet viverra magna sagittis et. Sed interdum, purus vel pellentesque tincidunt, eros nibh gravida elit, non iaculis nulla elit vitae est. Aliquam elementum tellus vel est pellentesque consectetur. Suspendisse porttitor neque odio, vel viverra purus pellentesque quis. Nunc feugiat eu augue nec rhoncus. Suspendisse tempus iaculis nisl ac iaculis. Suspendisse non iaculis nisl, vel suscipit neque. In efficitur turpis sit amet faucibus vulputate. Aliquam malesuada augue faucibus euismod porta.",
+        "type": 1,
+        "manufacturer": 1
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 11,
+    "fields": {
+        "name": "Rover",
+        "color": "black",
+        "description": "Nullam quis ante ac metus finibus laoreet. Sed congue erat ut elit accumsan, in venenatis est fringilla. Etiam quis nisl posuere, scelerisque nulla vitae, eleifend lorem. Ut non gravida ligula. Sed sed egestas urna. Praesent congue laoreet cursus. Vestibulum ac eros vel elit eleifend venenatis in ac eros. Aliquam eget placerat nibh. Pellentesque euismod, quam sed ultricies fringilla, neque leo pretium sapien, non finibus lorem ex ac libero. Vivamus libero velit, commodo eget mauris et, posuere vestibulum est. Etiam suscipit felis non nunc vehicula, quis venenatis diam semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia tellus condimentum, rutrum massa ac, faucibus erat. Donec quam elit, ornare sit amet ullamcorper quis, interdum ac ipsum. Proin iaculis tincidunt lectus a sagittis. Proin commodo tortor sit amet est sagittis venenatis eu id justo.",
+        "type": 3,
+        "manufacturer": 1
+    }
+}
+]
