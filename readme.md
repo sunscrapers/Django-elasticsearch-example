@@ -42,7 +42,8 @@ for point in result.aggregations.points_count:
 
 ## Links
 
-Check out article to this project, link.
+Check out article to this project:
+https://sunscrapers.com/blog/how-to-use-elasticsearch-with-django/
 
 ## Troubleshooting
 
