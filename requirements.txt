@@ -1,6 +1,6 @@
 Django==2.2.1
 psycopg2==2.8.2
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 django-filter==2.1.0
 elasticsearch-dsl>=6.0,<6.2
 django-elasticsearch-dsl==0.5.1
