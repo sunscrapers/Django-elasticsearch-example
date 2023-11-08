@@ -1,5 +1,6 @@
-from cars.views import CarSearchAPIView
 from django.urls import path
+
+from cars.views import CarSearchAPIView
 
 app_name = "cars"
 

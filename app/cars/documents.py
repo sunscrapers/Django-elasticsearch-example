@@ -1,6 +1,9 @@
-from cars.models import Car, Manufacturer
-from django_elasticsearch_dsl import Document, fields
+from django_elasticsearch_dsl import Document
+from django_elasticsearch_dsl import fields
 from django_elasticsearch_dsl.registries import registry
+
+from cars.models import Car
+from cars.models import Manufacturer
 
 
 @registry.register_document

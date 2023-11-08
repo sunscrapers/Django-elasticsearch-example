@@ -1,7 +1,8 @@
+from elasticsearch_dsl import Q
+
 from cars.documents import CarDocument
 from cars.serializers import CarSerializer
 from django_elasticsearch_example.views import ElasticSearchAPIView
-from elasticsearch_dsl import Q
 
 
 class CarSearchAPIView(ElasticSearchAPIView):

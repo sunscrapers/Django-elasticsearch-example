@@ -1,6 +1,8 @@
-from cars.models import Car, Manufacturer
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
+
+from cars.models import Car
+from cars.models import Manufacturer
 
 
 class SearchQuerySerializer(serializers.Serializer):

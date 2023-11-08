@@ -1,16 +1,18 @@
 import abc
-from typing import Any, Dict
+from typing import Any
+from typing import Dict
 
 from django.urls import reverse
 from django.views.generic import RedirectView
-from django_elasticsearch_example.exceptions import APIViewError
-from django_elasticsearch_example.serializers import SearchQuerySerializer
 from elasticsearch_dsl.query import Bool
 from elasticsearch_dsl.response import Response
 from elasticsearch_dsl.search import Search
 from rest_framework import status
 from rest_framework.response import Response as DRFResponse
 from rest_framework.views import APIView
+
+from django_elasticsearch_example.exceptions import APIViewError
+from django_elasticsearch_example.serializers import SearchQuerySerializer
 
 
 class IndexRedirectView(RedirectView):
