@@ -22,7 +22,10 @@ class ManufacturerSerializer(ModelSerializer):
 
 class CarSerializer(ModelSerializer):
     manufacturer = ManufacturerSerializer()
-    points = serializers.IntegerField(required=False, default=1)
+    points = serializers.IntegerField(
+        required=False,
+        default=1,
+    )
     auction_title = serializers.CharField()
 
     class Meta:

@@ -9,10 +9,10 @@ from cars.models import Manufacturer
 @registry.register_document
 class CarDocument(Document):
     name = fields.TextField(
-        attr="name",
         fields={
-            "suggest": fields.Completion(),
-        },
+            "raw": fields.TextField(analyzer="standard"),
+            "suggest": fields.CompletionField(),
+        }
     )
     manufacturer = fields.ObjectField(
         properties={

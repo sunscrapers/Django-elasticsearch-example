@@ -130,5 +130,7 @@ STATIC_URL = "/static/"
 
 # Elasticsearch configuration
 ELASTICSEARCH_DSL = {
-    "default": {"hosts": ["http://elasticsearch:9200"]},
+    "default": {
+        "hosts": ["http://elasticsearch:9200"],
+    },
 }
