@@ -15,7 +15,7 @@ Steps to build, load data from fixtures and run project:
 
 1. Enter into root of the project
 2. `make up`
-3. `make bootstrap`
+3. `make bootstrap` (in another terminal window)
 
 To test Elasticsearch in shell run these commands:
 
