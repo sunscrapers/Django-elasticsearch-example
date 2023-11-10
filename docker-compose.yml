@@ -1,27 +1,71 @@
 version: "3"
 
+x-base-app-conf: &base_app_conf # env_file: .env
+  stdin_open: true
+  tty: true
+
 services:
-  elasticsearch:
-    image: blacktop/elasticsearch:6.7.1
-  db:
-    image: postgres:11.3-alpine
-  django:
+  django_app:
+    <<: *base_app_conf
     image: django_app:latest
+    container_name: django_app
+    restart: always
     build:
       context: .
-      dockerfile: compose/django/Dockerfile
-    command: >
-      /bin/bash -c "
-        while ! curl -X GET elasticsearch:9200/_cluster/health --silent;
-        do
-          sleep 1;
-        done;
-        python manage.py runserver 0.0.0.0:8000
-      "
-    volumes:
-      - .:/code
+      dockerfile: docker/Dockerfile
     ports:
       - "8000:8000"
+    volumes:
+      - "./app:/app"
     depends_on:
       - db
       - elasticsearch
+      - django-migrations
+
+  # Apply Django migrations
+  django-migrations:
+    <<: *base_app_conf
+    image: django_app:latest
+    container_name: django-migrations
+    command: python manage.py migrate
+    restart: no
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - "./app:/app"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16.0-alpine
+    command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
+    container_name: db
+    restart: always
+    environment:
+      - POSTGRES_DB=mydatabase
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - django_app_db:/var/lib/postgresql/data
+
+  elasticsearch:
+    image: elasticsearch:8.10.3
+    container_name: elasticsearch
+    restart: always
+    environment:
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - 9200:9200
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
+volumes:
+  django_app_db:
+  elasticsearch_data:
